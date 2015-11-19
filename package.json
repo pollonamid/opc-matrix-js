@@ -1,0 +1,24 @@
+{
+  "name": "opc-matrix-js",
+  "version": "0.1.0",
+  "description": "A collection of LED Animations that are played using the OPC Protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pollonamid/opc-matrix-js.git"
+  },
+  "keywords": [
+    "opc",
+    "led",
+    "matrix"
+  ],
+  "author": "Benjamin Graf <benjamin@hormig.de> (http://pollonamid.de)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pollonamid/opc-matrix-js/issues"
+  },
+  "homepage": "https://github.com/pollonamid/opc-matrix-js#readme"
+}
