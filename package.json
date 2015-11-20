@@ -1,6 +1,6 @@
 {
   "name": "opc-matrix-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A collection of LED Animations that are played using the OPC Protocol",
   "main": "index.js",
   "scripts": {

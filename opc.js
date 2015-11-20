@@ -22,11 +22,6 @@ var OPC = function(host, port, modelpath)
   OPC.loadModel(modelpath);
 };
 
-OPC.prototype.getModel = function()
-{
-  return this.model;
-};
-
 OPC.prototype._reconnect = function()
 {
   var _this = this;
@@ -194,6 +189,11 @@ OPC.loadModel = function(filename)
 {
   // Synchronously load a JSON model from a file on disk
   this.model = JSON.parse(fs.readFileSync(filename));
+}
+
+OPC.getModel = function()
+{
+  return this.model;
 }
 
 OPC.hsv = function(h, s, v)
