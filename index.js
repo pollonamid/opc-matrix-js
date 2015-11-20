@@ -17,10 +17,10 @@ var init = function() {
 };
 
 module.exports = {
-    setup: function(host, port, modelmap) {
-        client = new opc(host, port, modelmap);
+    setup: function(host, port, modelpath) {
+        client = new opc(host, port, modelpath);
         console.log(opc);
-        model = client.model;
+        model = opc.getModel();
         init();
     },
     start: function(animation){

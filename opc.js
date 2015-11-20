@@ -13,13 +13,18 @@ var fs = require('fs');
  * Core OPC Client
  */
 
-var OPC = function(host, port, model)
+var OPC = function(host, port, modelpath)
 {
   this.host = host;
   this.port = port;
   this.pixelBuffer = null;
   this.lastPixelBuffer = null;
-  OPC.loadModel(model);
+  OPC.loadModel(modelpath);
+};
+
+OPC.prototype.getModel = function()
+{
+  return this.model;
 };
 
 OPC.prototype._reconnect = function()
@@ -188,7 +193,7 @@ OPC.prototype.mapXY = function(x, y, r, g, b)
 OPC.loadModel = function(filename)
 {
   // Synchronously load a JSON model from a file on disk
-  this.model = JSON.parse(fs.readFileSync(filename))
+  this.model = JSON.parse(fs.readFileSync(filename));
 }
 
 OPC.hsv = function(h, s, v)
