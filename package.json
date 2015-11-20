@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/pollonamid/opc-matrix-js/issues"
   },
-  "homepage": "https://github.com/pollonamid/opc-matrix-js#readme"
+  "homepage": "https://github.com/pollonamid/opc-matrix-js#readme",
+  "dependencies": {
+    "require-all": "^2.0.0"
+  }
 }

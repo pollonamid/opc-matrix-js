@@ -1,0 +1,1 @@
+model: JSON.parse(fs.readFileSync(modelFile))
