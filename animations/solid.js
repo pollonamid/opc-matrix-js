@@ -6,7 +6,7 @@ var client;
 var model;
 var r = 255, g = 255, b = 255;
 
-draw = function() {
+var draw = function() {
     for (var pixel = 0; pixel < model.length; pixel++)
     {
         client.setPixel(pixel, r, g, b);
@@ -25,6 +25,11 @@ module.exports = {
     },
     stop: function() {
         clearInterval(pid);
+        for (var pixel = 0; pixel < model.length; pixel++)
+        {
+            client.setPixel(pixel, 0, 0, 0);
+        }
+        client.writePixels();
     },
     update: function(data) {
         var obj = JSON.parse(data);

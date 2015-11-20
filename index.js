@@ -30,8 +30,8 @@ module.exports = {
         running = animation;
         animations[running].start();
     },
-    stop: function(animation){
-        animations[animation].stop();
+    stop: function(){
+        animations[running].stop();
         running = 'off';
     },
     update: function(animation, data){

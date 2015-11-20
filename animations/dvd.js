@@ -92,7 +92,7 @@ function moveStep(){
 }
 
 
-draw = function() {
+var draw = function() {
 
     client.setPixel(0,red/3,green/3,blue/3);
     client.setPixel(9,red/3,green/3,blue/3);

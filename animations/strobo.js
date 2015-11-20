@@ -10,7 +10,7 @@ var on = false;
 var r = 255, g = 255, b = 255;
 
 
-draw = function() {
+var draw = function() {
     if(on){
         for (var pixel = 0; pixel < model.length; pixel++) {
             client.setPixel(pixel, 0, 0, 0);

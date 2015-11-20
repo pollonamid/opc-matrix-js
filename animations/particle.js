@@ -6,7 +6,7 @@ var OPC = new require('../opc.js');
 var client;
 var model;
 
-draw = function() {
+var draw = function() {
     var time = 0.004 * new Date().getTime();
     var numParticles = 100;
     var particles = [];
