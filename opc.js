@@ -19,7 +19,7 @@ var OPC = function(host, port, model)
   this.port = port;
   this.pixelBuffer = null;
   this.lastPixelBuffer = null;
-  this.model = model;
+  OPC.loadModel(model);
 };
 
 OPC.prototype._reconnect = function()

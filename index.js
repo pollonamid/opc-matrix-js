@@ -20,7 +20,7 @@ module.exports = {
     setup: function(host, port, modelmap) {
         client = new opc(host, port, modelmap);
         console.log(opc);
-        model = modelmap;
+        model = client.model;
         init();
     },
     start: function(animation){
